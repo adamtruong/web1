@@ -1,0 +1,80 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #3F4E4F;
+}
+aside {
+    width: 250px;
+    height: 100vh;
+    background: #2C3639;
+    position: fixed;
+
+    color: #DCD7C9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.75)
+}
+
+
+aside ul {
+    padding-inline-start: 0;
+}
+
+aside ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+aside li:hover {
+    color:#FF0063;
+    font-size: 130%;
+}
+
+aside ul li .fas {
+    width: 50px;
+}
+
+.aside-wrapper {
+    padding: 0 40px;
+    box-sizing: border-box;
+  
+}
+
+.logo-text {
+    font-size: 35px;
+    position: relative;
+    color: #66BFBF;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    font-size: 50px;
+    top: 5px;
+    left: 205px;
+    background: #2C3639;
+    padding: 20px 25px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #DCD7C9;
+}
+
+.sidebar-toggle:hover {
+    color: #FF0063;
+    font-size: 150%;
+}
+
+input {
+    display: none;
+}
+
+/* Toggler Functionality */
+input:checked ~ aside {
+    left: -250px;
+}
